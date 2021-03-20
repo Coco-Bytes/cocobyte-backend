@@ -2,56 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/helpers/fetchJobs",
-      "handler": "helper.fetchJobs",
+      "path": "/jobs",
+      "handler": "job.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/helpers",
-      "handler": "helper.find",
+      "path": "/jobs/count",
+      "handler": "job.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/helpers/count",
-      "handler": "helper.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/helpers/:id",
-      "handler": "helper.findOne",
+      "path": "/jobs/:id",
+      "handler": "job.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/helpers",
-      "handler": "helper.create",
+      "path": "/jobs",
+      "handler": "job.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/helpers/:id",
-      "handler": "helper.update",
+      "path": "/jobs/:id",
+      "handler": "job.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/helpers/:id",
-      "handler": "helper.delete",
+      "path": "/jobs/:id",
+      "handler": "job.delete",
       "config": {
         "policies": []
       }
