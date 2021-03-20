@@ -20,7 +20,8 @@ module.exports = {
     })
 
     await jobs.map(job=>{
-      if(geolib.getDistance({lat,long},{job.latitude,job.longitude})<rad){
+      if(geolib.getDistance({"latitude":lat,"longitude":long},
+      {"latitude":job.latitude,"longitude":job.longitude})<rad){
         jobarray.push(job);
       }
     })

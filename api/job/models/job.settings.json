@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "jobs",
   "info": {
-    "name": "job"
+    "name": "job",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,6 +19,12 @@
     },
     "longitude": {
       "type": "float"
+    },
+    "RupeesOffered": {
+      "type": "biginteger"
+    },
+    "ExpectedDuration": {
+      "type": "integer"
     }
   }
 }
