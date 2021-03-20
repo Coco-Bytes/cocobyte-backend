@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "helpers",
+  "info": {
+    "name": "Rider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "PhoneNo": {
+      "type": "biginteger"
+    },
+    "Adhaar": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ProfilePic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "TaskPerformed": {
+      "type": "text"
+    },
+    "Ratings": {
+      "type": "decimal"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Username": {
+      "type": "string"
+    }
+  }
+}
